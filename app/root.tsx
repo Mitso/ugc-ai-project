@@ -1,11 +1,5 @@
-import './assets/css/index.css';
+import { Index }  from './App';
 
-import App from './views/App';
-import { Layout } from './views/Layout'
-import { ErrorBoundary } from "./views/ErrorBoundary";  
-
-<Layout>
-    <App/>
-    <ErrorBoundary/>
-</Layout>
-
+export default function App() {
+    return <Index />
+};

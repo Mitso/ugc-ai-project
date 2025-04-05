@@ -1,6 +1,4 @@
-import React from 'react';
-
-import type { HeaderProps  }  from '../../types/header';
+import type { HeaderProps  }  from '@/types/header';
 
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
@@ -11,8 +9,6 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Bell, ChevronDown, Plus, Settings, User } from "lucide-react";
-
-
 
 const Header = ({
   title = "Content Management System",

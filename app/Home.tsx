@@ -1,8 +1,25 @@
-import type { Route } from "./+types/App";
-import { Outlet } from "react-router";
+import type { Route } from "./+types/Home";
+
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "Home page" },
+        {   name: "Description", 
+            content: "Home - Welcome to React Router!" 
+        },
+    ];
+}
+export default function Home() {
+    return (
+        <section className="home">
+            <h1 className="text-3xl font-bold underline">
+                Welcome to the homepage
+            </h1>
+        </section>
+    )
+}
 // import { Suspense, useState } from 'react';
 // Header Component
-// import Header from './components/header/Header';
+
 //Page Components
 // import Home from "./views/Home";
 // import About from "./views/About";
@@ -34,7 +51,3 @@ import { Outlet } from "react-router";
 //     </Suspense>
 //   );
 // }
-
-export default function App() {
-  return <Outlet />;
-}
